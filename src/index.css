@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer components {
+
+    .bg-image-set {
+        @apply w-full h-screen bg-[url(assets/bg-image.jpg)] bg-cover bg-no-repeat overflow-hidden
+    }
+
+    .outer-container {
+        @apply w-4/5 h-4/6 relative rounded-4xl bg-gradient-to-tr from-[#00618d] via-[#008fba] to-[#00b4cf] border-2 border-[#00b4cf] shadow-[0px_0px_10px_#00b4cf]
+    }
+
+    .center-items {
+        @apply flex justify-center items-center
+    }
+
+    .swap-btn {
+        @apply absolute w-1/4 h-2/21 top-3/8 text-lg text-[#001824] rounded-lg border-3 border-[#001824] bg-[#00b4cf]
+    }
+
+    .convert-btn {
+        @apply w-6/7 h-2/21 text-lg text-center rounded-lg border-3 border-[#001824] bg-gradient-to-tr from-[#00618d] via-[#008fba] to-[#00b4cf]
+    }
+}
+
+/* Hide default spinner controls */
+.custom-input::-webkit-outer-spin-button,
+.custom-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Custom spinner buttons */
+.custom-input {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    /* Hide default arrow in Chrome/Safari */
+    -moz-appearance: none;
+    /* Hide default arrow in Firefox */
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 20 20" fill="#4F959D" xmlns="http://www.w3.org/2000/svg"><path d="M7 7l3 3 3-3" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+    padding-right: 2rem;
+    /* Space for custom arrow */
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    font-style: normal;
+}
